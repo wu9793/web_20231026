@@ -8,25 +8,15 @@
         body{
             margin: 0;
         }
-        .nav{
-            width: 100%;
-            height: 7vh;
-            background-color: thistle;
-            margin: auto;
-        }
         .container{
-            /* 宣告flexbox，製作多欄式版面的屬性*/
             display: flex;
-            /* 橫row 直column */
             flex-direction: row;
-            /* 自動換行 */
             flex-wrap: wrap;
-            /* 垂直column置中 */
             align-items: center;
-            /* 水平row置中 */
-            justify-content: center;
-            width: 100%;
-            height: 80vh;
+            justify-content: space-evenly;
+            width: 60%;
+            height: 100vh;
+            margin: auto;
             background-color: lightblue;
         }
         .item{
@@ -35,26 +25,25 @@
             background-color: lightgray;
             /* border: 1px solid black; */
         }
-        .footer{
-            width: 100%;
-            height: 7vh;
-            background-color: lightseagreen;
-            margin: auto;
+        .item1{
+            background-color: lightgreen;
+        }
+        .item2{
+            background-color: lightpink;
         }
     </style>
 </head>
 <body>
-    <nav class="nav">nav</nav>
     <div class="container">
-        <div class="item">item1</div>
+        <div class="item item1">item1</div>
         <div class="item">item2</div>
         <div class="item">item3</div>
         <div class="item">item4</div>
-        <div class="item">item5</div>
-        <div class="item">item6</div>
-        <div class="item">item7</div>
+        <div class="item item1">item5</div>
+        <div class="item item2">item6</div>
+        <div class="item item2">item7</div>
         <div class="item">item8</div>
+        <div class="item item1">item9</div>
     </div>
-    <div class="footer">footer</div>
 </body>
 </html>
