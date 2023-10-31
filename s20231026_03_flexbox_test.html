@@ -7,30 +7,85 @@
     <title>Document</title>
     <style>
         body {
+            margin: 0;
             box-sizing: border-box;
             background-image: url(./images/13.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            backdrop-filter: blur(2px);
         }
 
         .nav {
             top: 0;
             width: 100%;
-            height: 7vh;
+            height: 15vh;
             background-color: rgb(165, 190, 204);
             margin: auto;
             /* padding-top: 20px; */
             position: fixed;
+            z-index: 1000;
+            background-image: url(./images/14.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 10px 8px 5px;
+            
+        }
+
+        nav>a {
+            font-size: 20px;
+            color: #ffffff;
+            margin-left: 150px;
 
         }
 
-        .nav>a {
-            font-size: 30px;
-            color: lightslategray;
-            padding: 10px 20px;
+        nav>a:hover {
+            color: rgb(28, 202, 182);
+            font-size: 23PX;
+        }
+
+        nav>img {
+            width: 50px;
+            height: 50px;
+            /* display: inline-block; */
+            /* top: 40px; */
+        }
+
+        h3,
+        a {
             display: inline-block;
+            margin-top: 20px;
+            margin-left: 10px;
         }
+
+        h3 {
+            font-size: 40px;
+            color: #af3636;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h4 {
+            color: #ccc;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 20px;
+            font-size: 25px;
+            width: 20%;
+            height: 20%;
+            /* background-color: lightcoral; */
+            /* 手繪框線 */
+            border: dashed #af3636 2px;
+            transform: rotate(2deg);
+            border-width: 3px 4px 2px 5px;
+            border-radius: 5% 94% 7% 95%;
+            transform: rotate(-2deg);
+
+        }
+
 
         .container {
             display: flex;
@@ -41,6 +96,7 @@
             margin: auto;
             width: 80%;
             height: 100vh;
+            
 
             /* margin-top: 20px; */
             /* background-color: lightblue; */
@@ -58,24 +114,32 @@
             width: 80%;
             height: 80vh;
             /* background-color: lightblue; */
+            border: 2px solid #ffffff;
+            border-radius: 5px;
         }
 
         .item {
             width: 30%;
-            height: 70vh;
+            height: 60%;
             background-color: lightgray;
             border-radius: 20px;
+            box-shadow: 5px 5px 8px 0 black;
             /* border: 1px solid black; */
         }
 
+        /* .item>hover{
+            size: 10%;
+        } */
+
         .item1 {
             width: 23%;
-            height: 30%;
+            height: 40%;
             margin-top: 30px;
             margin-bottom: 30px;
             border-radius: 20px;
             background-color: lightgray;
             /* border: 1px solid black; */
+            box-shadow: 5px 5px 8px 0 black;
         }
 
         img {
@@ -96,29 +160,37 @@
             font-size: 30px;
         }
 
-        a {
-            text-decoration: none;
-        }
+
 
         a:hover {
             text-decoration: underline;
+
         }
 
-        .footer1 {
+        /* .footer1 {
             width: 100%;
-            height: 3vh;
+            height: vh;
             background-color: lightseagreen;
-            /* position: absolute; */
+            position: absolute;
             bottom: 0%;
+        } */
+
+        p {
+            margin-top: 0%;
         }
+    
     </style>
 </head>
 
 <body>
     <nav class="nav">
-        <a href="#hot">Hot</a>
-        <a href="#car">Car</a>
+        <img src="./images/15.png" alt="">
+        <h3>HALLOWEEN 飾品部</h3>
+        <a href="">關於我們</a>
+        <a href="#hot">熱銷推薦 TOP3</a>
+        <a href="#car">精選小物</a>
     </nav>
+    <!-- <h4 class="top-item">熱銷推薦 TOP3</h4> -->
     <div id="hot" class="container">
         <div class="item">
             <img src="./images/01.jpg" alt="">
@@ -126,61 +198,53 @@
         </div>
         <div class="item">
             <img src="./images/02.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quia ex sed doloribus error excepturi
-                dolor blanditiis similique eius sint!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="item">
             <img src="./images/03.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi asperiores quidem blanditiis
-                harum sint in rem ab iusto voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </div>
+    <h4>精選小物</h4>
     <div id="car" class="container1">
+
         <div class="item1">
             <img src="./images/04.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi asperiores quidem blanditiis
-                harum sint in rem ab iusto voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="item1">
             <img src="./images/05.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi asperiores quidem blanditiis
-                harum sint in rem ab iusto voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
         </div>
         <div class="item1">
             <img src="./images/06.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi asperiores quidem blanditiis
-                harum sint in rem ab iusto voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="item1">
             <img src="./images/07.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi asperiores quidem blanditiis
-                harum sint in rem ab iusto voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="item1">
             <img src="./images/08.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi asperiores quidem blanditiis
-                harum sint in rem ab iusto voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="item1">
             <img src="./images/09.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi asperiores quidem blanditiis
-                harum sint in rem ab iusto voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="item1">
             <img src="./images/10.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi asperiores quidem blanditiis
-                harum sint in rem ab iusto voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="item1">
             <img src="./images/11.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi asperiores quidem blanditiis
-                harum sint in rem ab iusto voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </div>
     <a href="#" class="pos-fixed">top</a>
-    <footer class="footer1">
+    <!-- <footer class="footer1">
         footer
-    </footer>
+    </footer> -->
 
 </body>
 
