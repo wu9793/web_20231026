@@ -23,14 +23,15 @@
             background-color: rgb(165, 190, 204);
             margin: auto;
             /* padding-top: 20px; */
-            position: fixed;
+            position: sticky;
             z-index: 1000;
+            display: flex;
             background-image: url(./images/14.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             box-shadow: 10px 8px 5px;
-            
+
         }
 
         nav>a {
@@ -46,16 +47,16 @@
         }
 
         nav>img {
-            width: 50px;
-            height: 50px;
+            width: 80px;
+            height: 80px;
             /* display: inline-block; */
-            /* top: 40px; */
+            top: 40px;
         }
 
         h3,
         a {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 40px;
             margin-left: 10px;
         }
 
@@ -96,7 +97,7 @@
             margin: auto;
             width: 80%;
             height: 100vh;
-            
+
 
             /* margin-top: 20px; */
             /* background-color: lightblue; */
@@ -178,7 +179,18 @@
         p {
             margin-top: 0%;
         }
-    
+        .fixed-ghost{
+            bottom: 0;
+            left: 0;
+            width: 20%;
+            position: fixed;
+        }
+        .fixed-ghost2{
+            bottom: 0;
+            right: 0;
+            width: 30%;
+            position: fixed;
+        }
     </style>
 </head>
 
@@ -241,7 +253,11 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </div>
-    <a href="#" class="pos-fixed">top</a>
+    <div>
+        <a href="#" class="pos-fixed">top</a>
+        <img src="./images/19.png" class="fixed-ghost">
+        <img src="./images/21.png" class="fixed-ghost2">
+    </div>
     <!-- <footer class="footer1">
         footer
     </footer> -->
